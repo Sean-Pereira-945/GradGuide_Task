@@ -1,0 +1,21 @@
+# Rules engine definitions for transparent employer trust signal checks.
+red_flags:
+  - id: "below_min_wage"
+    weight: 35
+    reason: "Stated hourly pay appears to be below the national minimum wage threshold."
+  - id: "cash_in_hand"
+    keywords: ["cash in hand", "cash payment", "no tax invoice", "off the books"]
+    weight: 40
+    reason: "Phrases referencing cash-in-hand or off-the-books payments detected."
+  - id: "fee_required"
+    keywords: ["training fee", "application fee", "pay to apply", "upfront cost", "deposit required"]
+    weight: 50
+    reason: "Job posting mentions upfront fees or deposits, which is a key indicator of employment scams."
+  - id: "sensitive_docs"
+    keywords: ["send passport", "bank details", "upfront tax file number", "tfn upfront"]
+    weight: 30
+    reason: "Requests sensitive identification documents upfront prior to formal interview."
+  - id: "vague_employer"
+    keywords: ["private employer", "confidential company", "anonymous hirer"]
+    weight: 20
+    reason: "Employer name is unlisted or vague."

@@ -1,0 +1,5 @@
+job_types:
+  part_time: ["part-time", "part time"]
+  casual: ["casual"]
+  full_time: ["full-time", "full time"]
+  internship: ["intern", "internship"]

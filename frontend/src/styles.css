@@ -1,0 +1,264 @@
+:root {
+  --bg-dark: #0f172a;
+  --card-bg: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-hover: #0284c7;
+  --ok-bg: #064e3b;
+  --ok-text: #6ee7b7;
+  --warn-bg: #78350f;
+  --warn-text: #fde047;
+  --danger-bg: #7f1d1d;
+  --danger-text: #fca5a5;
+  --border: #334155;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+.brand-mark {
+  background: var(--accent);
+  color: #000;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 900;
+}
+
+.btn-live-scrape {
+  background: linear-gradient(135deg, #38bdf8, #818cf8);
+  color: #000;
+  font-weight: 700;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-live-scrape:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.btn-live-scrape:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.nav-links button {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1rem;
+  padding: 8px 16px;
+  cursor: pointer;
+
+  &.active, &:hover {
+    color: var(--accent);
+  }
+}
+
+.reminder-banner {
+  background: #3b82f622;
+  border: 1px solid #3b82f6;
+  color: #60a5fa;
+  padding: 12px 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.hero {
+  padding: 40px 0 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-top: 5px;
+}
+
+.search-field {
+  display: flex;
+  gap: 10px;
+  background: var(--card-bg);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  margin-top: 20px;
+}
+
+.search-field input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.filter-bar {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.filter-bar select {
+  background: var(--card-bg);
+  color: #fff;
+  border: 1px solid var(--border);
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.workspace {
+  margin-top: 30px;
+}
+
+.job-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.job-row {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  padding: 18px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+  }
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.badge-ok { background: var(--ok-bg); color: var(--ok-text); }
+.badge-warning { background: var(--warn-bg); color: var(--warn-text); }
+.badge-danger { background: var(--danger-bg); color: var(--danger-text); }
+.badge-trust { background: #1e1b4b; color: #a5b4fc; }
+
+.btn-primary {
+  background: var(--accent);
+  color: #000;
+  font-weight: 600;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: var(--border);
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px; right: 15px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+}
+
+.profile-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-form input[type="text"], .profile-form input[type="number"] {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  text-align: center;
+}

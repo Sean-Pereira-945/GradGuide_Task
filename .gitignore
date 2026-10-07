@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local data and scraper output
+data/jobs.db
+data/raw/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+.kilo
+ikilo
+# Local environment and editor files
+.env
+.env.*
+.vscode/
+!.vscode/extensions.json
+*.log

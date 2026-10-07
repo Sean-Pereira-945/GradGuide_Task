@@ -1,0 +1,8 @@
+# VERIFY values against official government sources before presenting them in UI.
+australia:
+  student_subclass_500:
+    cap_hours_per_fortnight: 48.0   # VERIFY: Official Department of Home Affairs student visa work cap
+    applies_during_study_period: true
+    unlimited_during_breaks: true
+    official_source_url: "https://immi.homeaffairs.gov.au/visas/already-have-a-visa/check-visa-details-and-conditions/see-your-visa-conditions?product=500"
+    last_verified: "2026-10-05"

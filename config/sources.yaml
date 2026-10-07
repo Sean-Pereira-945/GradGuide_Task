@@ -1,0 +1,83 @@
+sources:
+  - name: adelaide_uni
+    enabled: true
+    label: "Adelaide Uni Student Jobs"
+    base_url: "https://www.adelaide.edu.au/student/employment/jobs"
+    max_pages: 5
+    default_job_type_hint: "casual"
+
+  - name: monash_uni
+    enabled: true
+    label: "Monash Student Work"
+    base_url: "https://www.monash.edu/student-jobs/listings"
+    max_pages: 5
+    default_job_type_hint: "part_time"
+
+  - name: woolworths
+    enabled: true
+    label: "Woolworths Casual Careers"
+    base_url: "https://www.woolworthsgroup.com.au/careers/casual"
+    max_pages: 5
+    default_job_type_hint: "casual"
+
+  - name: gradconnection
+    enabled: true
+    label: "GradConnection Internships"
+    base_url: "https://au.gradconnection.com/internships/"
+    max_pages: 5
+    default_job_type_hint: "internship"
+
+  # Public university career pages use the shared university_jobs parser.
+  - name: melbourne_uni
+    enabled: true
+    label: "University of Melbourne Student Jobs"
+    base_url: "https://students.unimelb.edu.au/careers/find-a-job"
+    max_pages: 3
+    default_location: "Melbourne, VIC"
+    default_job_type_hint: "part_time"
+    scraper: "university_jobs"
+
+  - name: sydney_uni
+    enabled: true
+    label: "University of Sydney Student Jobs"
+    base_url: "https://www.sydney.edu.au/students/find-a-job.html"
+    max_pages: 3
+    default_location: "Sydney, NSW"
+    default_job_type_hint: "part_time"
+    scraper: "university_jobs"
+
+  - name: uq
+    enabled: true
+    label: "University of Queensland Student Jobs"
+    base_url: "https://employability.uq.edu.au/find-a-job"
+    max_pages: 3
+    default_location: "Brisbane, QLD"
+    default_job_type_hint: "part_time"
+    scraper: "university_jobs"
+
+  - name: unsw
+    enabled: true
+    label: "UNSW Student Jobs"
+    base_url: "https://www.unsw.edu.au/students/careers"
+    max_pages: 3
+    default_location: "Sydney, NSW"
+    default_job_type_hint: "part_time"
+    scraper: "university_jobs"
+
+  - name: rmit
+    enabled: true
+    label: "RMIT Student Jobs"
+    base_url: "https://www.rmit.edu.au/students/careers"
+    max_pages: 3
+    default_location: "Melbourne, VIC"
+    default_job_type_hint: "part_time"
+    scraper: "university_jobs"
+
+  - name: uts
+    enabled: true
+    label: "UTS Student Jobs"
+    base_url: "https://www.uts.edu.au/current-students/opportunities"
+    max_pages: 3
+    default_location: "Sydney, NSW"
+    default_job_type_hint: "part_time"
+    scraper: "university_jobs"

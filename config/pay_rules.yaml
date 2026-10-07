@@ -1,0 +1,7 @@
+# VERIFY national minimum wage rates against Fair Work Ombudsman.
+australia:
+  national_minimum_wage_hourly: 24.10  # VERIFY: National minimum wage (AUD/hr as of July 2024/2025)
+  casual_loading_multiplier: 1.25       # 25% casual loading rate in Australia
+  currency: "AUD"
+  official_source_url: "https://www.fairwork.gov.au/pay-and-wages/minimum-wages"
+  last_verified: "2026-10-05"
